@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,38 +13,39 @@
         <a href="index.html"><img src="img/logo.svg" alt="Лого"></a>
         <input type="text">
         <nav>
-            <a href="catalog.html">Каталог</a>
-            <a href="">Корзина</a>
+            <a href="catalog.html" class="navigation">Каталог</a>
+            <a href="" class="navigation">Корзина</a>
         </nav>
     </header>
     <section>
-        <h1 id="title">Все, что заслуживает ваш дом</h1>
-        <a href="catalog.html">Перейти в каталог</a>
-        <p> Наша мебель - ваше отражение</p>
+        <h1 id="title" class="title-1">Все, что заслуживает ваш дом</h1>
+        <p class="text-1"> Наша мебель - ваше отражение</p>
+        <a href="catalog.html" class="link-in-catalog">Перейти в каталог</a>
     </section>
     <section>
-        <h2>Специально предложение</h2>
+        <h2 class="title-2">Специально предложение</h2>
         <img src="img/product1.jpg" alt="Кресло VILORA">
-        <h3>Кресло VILORA</h3>
-        <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
-        <p>21000</p>
-        <p>28000</p>
+        <h3 class="title-3">Кресло VILORA</h3>
+        <p class="description-text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+            ткань.</p>
+        <p class="price-text-1">21000</p>
+        <p class="price-text-2">28000</p>
     </section>
     <footer>
-        <h4>Меню</h4>
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="">Корзина</a>
-        <h4>Контакты</h4>
-        <a href="">+7 908 800 80 80</a>
-        <a href="">help@interier.com</a>
+        <h4 class="title-4">Меню</h4>
+        <a href="index.html" class="link-in-the-footer">Главная</a>
+        <a href="catalog.html" class="link-in-the-footer">Каталог</a>
+        <a href="" class="link-in-the-footer">Корзина</a>
+        <h4 class="title-4">Контакты</h4>
+        <a href="" class="link-in-the-footer">+7 908 800 80 80</a>
+        <a href="" class="link-in-the-footer">help@interier.com</a>
         <a href=""><img src="img/inst.svg" alt="ints"></a>
         <a href=""><img src="img/twitter.svg" alt="twitter"></a>
         <a href=""><img src="img/facebook.svg" alt="facebook"></a>
         <form action="#">
-            <p>Получайте наши новости и обновления</p>
-            <input type="email" name="" id="">
-            <button>Подписаться</button>
+            <p class="text-subscribe">Получайте наши новости и обновления</p>
+            <input type="email" name="" id="" class="field-input">
+            <button class="button-subscribe">Подписаться</button>
         </form>
     </footer>
 </body>
