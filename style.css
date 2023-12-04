@@ -33,6 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.80);
 }
 
 .top_text {
@@ -59,10 +60,16 @@ header {
     line-height: normal;
     padding-left: 32px;
     padding-right: 32px;
+    font-family: inherit;
 }
 
 .header_input::placeholder {
     color: #FFF;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
 }
 
 .menu_link {
@@ -186,7 +193,8 @@ header {
     height: 207px;
     background-color: #F7F6F6;
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-top: 32px;
     /*justify-content: space-between;*/
 }
 
@@ -219,6 +227,11 @@ header {
     line-height: normal;
 }
 
+.footer_link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
 .box_contacts_link {
     display: flex;
     column-gap: 20px;
@@ -241,6 +254,9 @@ header {
     border-radius: 17px;
     padding-left: 17px;
     padding-right: 17px;
+    font-family: inherit;
+    outline: none;
+    border: 1px solid #C4C4C4;
 }
 
 .footer_input::placeholder {
@@ -257,4 +273,5 @@ header {
     border-style: none;
     background-color: rgba(222, 215, 215, 0.41);
     border-radius: 17px;
+    font-family: inherit;
 }
