@@ -21,12 +21,20 @@ header {
 }
 
 .top {
-    height: 735px;
-    background-image: url(img/background__top.png);
     background-repeat: no-repeat;
     background-position: canter;
     background-size: cover;
     margin-bottom: 64px;
+}
+
+.home_top {
+    height: 735px;
+    background-image: url(img/background__top_home.png);
+}
+
+.catalog_top {
+    height: 400px;
+    background-image: url(img/background__top_catalog.png);
 }
 
 .header {
@@ -118,6 +126,59 @@ header {
     row-gap: 48px;
     margin-top: 32px;
     flex-wrap: wrap;
+}
+
+.for_box {
+    padding-top: 64px;
+}
+
+.for {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+}
+
+.for_item {
+    height: 415px;
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for_link {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.for_item_big {
+    grid-column: span 6;
+}
+
+.for_item_1 {
+    background-image: url(img/rest.png);
+}
+
+.for_item_2 {
+    background-image: url(img/job.png);
+}
+
+.for_item_3 {
+    background-image: url(img/kitchen.png);
+}
+
+.for_item_4 {
+    background-image: url(img/nursery.png);
+}
+
+.for_item_5 {
+    background-image: url(img/bathroom.png);
 }
 
 .section_catalog {
@@ -274,4 +335,49 @@ header {
     background-color: rgba(222, 215, 215, 0.41);
     border-radius: 17px;
     font-family: inherit;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_link_box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.info_link {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.info_select {
+    width: 288px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.catalog_button {
+    background-color: #FFF;
+    border: none;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+    cursor: pointer;
 }
