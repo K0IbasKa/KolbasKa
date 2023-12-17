@@ -1,0 +1,204 @@
+@import 'vars';
+
+.basket_top {
+    background-image: url(img/background__top_basket.png);
+    height: 400px;
+}
+
+.heading_big_basket {
+    margin-top: 127px;
+}
+
+.basket {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_content {
+        grid-column: span 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &_number {
+            width: 71px;
+            height: 51px;
+            border: 1px solid #000;
+            border-radius: 6px;
+            background: #F7F6F6;
+            padding-left: 23px;
+            padding-right: 14px;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 210%;
+        }
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 276px;
+    }
+
+    &_link-box {
+        display: flex;
+        gap: 32px;
+    }
+
+    &_link {
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration-line: underline;
+    }
+
+    &_button-box {
+        display: flex;
+        gap: 7px;
+        align-items: flex-end;
+    }
+
+    &_button {
+        width: 200px;
+        height: 37px;
+        display: inline-flex;
+        padding: 10px 22px 10px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_form {
+        border-radius: 20px;
+        background: $bgc-basket_form;
+        height: 556px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        padding-top: 42px;
+
+        &_name {
+            color: #000;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 36px;
+        }
+
+        &_button {
+            margin-left: 45px;
+            margin-right: 44px;
+            width: 290px;
+            height: 41px;
+            border-radius: 20px;
+            border: 1px solid #040404;
+            color: #000;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &_input {
+        margin-left: 28px;
+        margin-right: 64px;
+        margin-bottom: 44px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        border-bottom: 0.5px solid #CACDD8;
+        background: $bgc-basket_form;
+        color: #000;
+        text-align: start;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &::placeholder {
+            color: #CACDD8;
+            text-align: start;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &_total_price {
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 18px;
+
+        &_money {
+            font-size: 29px;
+            font-weight: 500;
+        }
+    }
+}
+
+.all_img {
+    display: grid;
+    grid-template-areas: "images";
+}
+
+.img {
+    grid-area: images;
+}
+
+.icon_add_to-box {
+    grid-area: images;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-self: end;
+}
+
+.icon_add_to {
+    margin-left: 21px;
+    height: 24px;
+    width: 24px;
+}
