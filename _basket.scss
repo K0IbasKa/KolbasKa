@@ -53,6 +53,11 @@
         }
     }
 
+    &_img {
+        height: 173px;
+        width: 173px;
+    }
+
     &_left {
         display: flex;
         gap: 32px;
@@ -89,10 +94,6 @@
     &_button {
         width: 200px;
         height: 37px;
-        display: inline-flex;
-        padding: 10px 22px 10px 20px;
-        justify-content: center;
-        align-items: center;
         border-radius: 50px;
         border: 1px solid #000;
         color: #000;
@@ -100,7 +101,8 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        background-color: inherit;
+        font-family: inherit;
     }
 
     &_form {
@@ -191,6 +193,7 @@
 
 .icon_add_to-box {
     grid-area: images;
+    height: 24px;
     display: flex;
     margin-top: 10px;
     margin-right: 10px;
