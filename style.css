@@ -511,12 +511,16 @@ select,
 .basket_info {
   display: flex;
   flex-direction: column;
-  gap: 14px;
   width: 276px;
+}
+.basket_price {
+  height: 20px;
+  font-size: 16px;
 }
 .basket_link-box {
   display: flex;
-  gap: 32px;
+  gap: 30px;
+  margin-top: 15px;
 }
 .basket_link {
   color: #000;
