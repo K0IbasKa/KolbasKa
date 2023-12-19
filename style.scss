@@ -100,7 +100,7 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 70px;
-    width: 792px;
+    max-width: 792px;
 }
 
 .heading_big_home {
@@ -434,3 +434,4 @@ select,
 }
 
 @import 'basket';
+@import 'tablet';

@@ -104,7 +104,7 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 70px;
-  width: 792px;
+  max-width: 792px;
 }
 
 .heading_big_home {
@@ -464,6 +464,7 @@ select,
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
   margin-top: 64px;
+  row-gap: 64px;
 }
 .basket_name-box {
   display: flex;
@@ -644,4 +645,51 @@ select,
   margin-left: 21px;
   height: 24px;
   width: 24px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for_item {
+    height: 268px;
+  }
+  .section_special_offers {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 39px;
+  }
+  .section_catalog {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 39px;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_menu {
+    padding-left: 0px;
+  }
+  .footer_subscription {
+    padding-left: 192px;
+  }
+  .basket {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .product {
+    width: 345px;
+  }
+  .img {
+    width: 345px;
+  }
+  .footer_subscription {
+    padding-left: 127px;
+  }
 }/*# sourceMappingURL=style.css.map */
