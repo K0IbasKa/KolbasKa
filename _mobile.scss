@@ -1,0 +1,165 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 343px/2);
+        padding-right: calc(50% - 343px/2);
+    }
+
+    .header {
+        padding-top: 32px;
+
+        &_input {
+            display: none;
+        }
+
+    }
+
+    .menu {
+        display: none;
+
+        &_mob {
+            align-items: center;
+            display: flex;
+            gap: 32px;
+        }
+    }
+
+    .logo {
+
+        &_img {
+            width: 99px;
+        }
+    }
+
+    .title_1 {
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .title_2 {
+        font-size: 24px;
+    }
+
+    .top_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top_text {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .link {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 16px;
+
+        &_box {
+            padding-top: 0px;
+        }
+
+        &_item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+
+            &_big {
+                height: 244px;
+            }
+        }
+    }
+
+    .img {
+        width: 343px;
+        height: 226px;
+        margin-bottom: 9px;
+    }
+
+    .product {
+        &_box {
+            margin-top: 32px;
+        }
+
+        &_name {
+            font-size: 18px;
+        }
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 363px;
+        row-gap: 70px;
+        margin-top: 32px;
+
+        &_subscription {
+            padding-left: 0px;
+        }
+    }
+
+    .section_special_offers {
+        row-gap: 32px;
+    }
+
+    .section_catalog {
+        row-gap: 32px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+
+    .basket {
+        margin-top: 92px;
+        grid-template-columns: repeat(4, 1fr);
+
+        &_content {
+            grid-column: span 4;
+        }
+
+        &_item {
+            column-gap: 19px;
+        }
+
+        &_left {
+            width: 253px;
+        }
+
+        &_name-box {
+            display: none;
+        }
+
+        &_button {
+            font-size: 12px;
+        }
+
+        &_price {
+            font-size: 14px;
+        }
+
+        &_img {
+            display: none;
+        }
+
+        &_form {
+            grid-column: span 4;
+
+            &_button {
+                margin-left: 26px;
+                margin-right: 27px;
+            }
+        }
+    }
+}
