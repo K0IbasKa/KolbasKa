@@ -155,10 +155,6 @@ header {
     flex-wrap: wrap;
 }
 
-.for_box {
-    padding-top: 64px;
-}
-
 .for {
     margin-top: 32px;
     display: grid;
@@ -431,6 +427,7 @@ select,
 
 .catalog_button {
     background-color: #FFF;
+    font-family: Montserrat;
     border: none;
     text-align: center;
     color: #000;

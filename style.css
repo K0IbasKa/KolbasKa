@@ -157,10 +157,6 @@ header {
   flex-wrap: wrap;
 }
 
-.for_box {
-  padding-top: 64px;
-}
-
 .for {
   margin-top: 32px;
   display: grid;
@@ -445,6 +441,7 @@ select,
 
 .catalog_button {
   background-color: #FFF;
+  font-family: Montserrat;
   border: none;
   text-align: center;
   color: #000;
@@ -707,6 +704,9 @@ select,
   .center {
     padding-left: calc(50% - 171.5px);
     padding-right: calc(50% - 171.5px);
+  }
+  .top {
+    margin-bottom: 32px;
   }
   .header {
     padding-top: 32px;
