@@ -604,6 +604,7 @@ select,
 .basket_form_button {
   margin-left: 45px;
   margin-right: 44px;
+  font-family: Montserrat;
   width: 290px;
   height: 41px;
   border-radius: 20px;
@@ -614,6 +615,10 @@ select,
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.basket_form_button:hover {
+  background-color: #000;
+  color: #fff;
 }
 .basket_input {
   margin-left: 28px;
@@ -781,6 +786,9 @@ select,
   .link {
     text-align: center;
     font-size: 14px;
+  }
+  .product {
+    padding: 0px;
   }
   .for {
     grid-template-columns: repeat(4, 1fr);
