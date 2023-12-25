@@ -1,14 +1,5 @@
 @import 'vars';
 
-.basket_top {
-    background-image: url(img/background__top_basket.png);
-    height: 400px;
-}
-
-.heading_big_basket {
-    margin-top: 127px;
-}
-
 .basket {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -16,20 +7,30 @@
     margin-top: 64px;
     row-gap: 64px;
 
-    &_name-box {
+    &__top {
+        background-image: url(img/background__top_basket.png);
+        height: 400px;
+    }
+
+    &__headingBig {
+        margin-top: 127px;
+    }
+
+
+    &__name-box {
         display: flex;
         justify-content: space-between;
         padding-bottom: 14px;
     }
 
-    &_content {
+    &__content {
         grid-column: span 8;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    &_item {
+    &__item {
         border-top: 0.5px solid #CACDD8;
         padding-top: 25px;
         margin-bottom: 32px;
@@ -54,34 +55,29 @@
         }
     }
 
-    &_img {
-        width: 100%;
-        height: 100%;
-    }
-
-    &_left {
+    &__left {
         display: flex;
         gap: 32px;
     }
 
-    &_info {
+    &__info {
         display: flex;
         flex-direction: column;
         width: 276px;
     }
 
-    &_price {
+    &__price {
         height: 20px;
         font-size: 16px;
     }
 
-    &_link-box {
+    &__link-box {
         display: flex;
         gap: 30px;
         margin-top: 15px;
     }
 
-    &_link {
+    &__link {
         color: #000;
         text-align: center;
         font-size: 14px;
@@ -91,13 +87,13 @@
         text-decoration-line: underline;
     }
 
-    &_button-box {
+    &__button-box {
         display: flex;
         gap: 7px;
         align-items: flex-end;
     }
 
-    &_button {
+    &__button {
         width: 200px;
         height: 37px;
         border-radius: 50px;
@@ -117,9 +113,9 @@
         }
     }
 
-    &_form {
+    &__form {
         border-radius: 20px;
-        background: $bgc-basket_form;
+        background: $bgc-basket__form;
         height: 556px;
         grid-column: span 4;
         display: flex;
@@ -127,7 +123,7 @@
         padding-top: 42px;
 
 
-        &_name {
+        &__name {
             color: #000;
             text-align: center;
             font-size: 24px;
@@ -137,7 +133,7 @@
             margin-bottom: 36px;
         }
 
-        &_button {
+        &__button {
             margin-left: 45px;
             margin-right: 44px;
             font-family: Montserrat;
@@ -159,7 +155,7 @@
         }
     }
 
-    &_input {
+    &__input {
         margin-left: 28px;
         margin-right: 64px;
         margin-bottom: 44px;
@@ -167,7 +163,7 @@
         outline: none;
         border: none;
         border-bottom: 0.5px solid #CACDD8;
-        background: $bgc-basket_form;
+        background: $bgc-basket__form;
         color: #000;
         text-align: start;
         font-size: 14px;
@@ -185,7 +181,7 @@
         }
     }
 
-    &_total_price {
+    &__totalPrice {
         color: #000;
         text-align: center;
         font-size: 24px;
@@ -201,7 +197,7 @@
     }
 }
 
-.all_img {
+.img-box {
     display: grid;
     grid-template-areas: "images";
 }
@@ -212,20 +208,20 @@
     grid-area: images;
 }
 
-.icon_add_to-box {
-    grid-area: images;
-    height: 24px;
-    display: flex;
-    margin-top: 10px;
-    margin-right: 10px;
-    justify-self: end;
-}
-
-.icon_add_to {
+.iconAddTo {
     margin-left: 21px;
     height: 24px;
     width: 24px;
     fill: #C4C4C4;
+
+    &-box {
+        grid-area: images;
+        height: 24px;
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+        justify-self: end;
+    }
 
     &:hover {
         fill: #c48686;

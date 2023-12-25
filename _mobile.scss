@@ -1,4 +1,5 @@
 @media (max-width: 767px) {
+
     .center {
         padding-left: calc(50% - 343px/2);
         padding-right: calc(50% - 343px/2);
@@ -11,7 +12,7 @@
     .header {
         padding-top: 32px;
 
-        &_input {
+        &__input {
             display: none;
         }
 
@@ -20,7 +21,7 @@
     .menu {
         display: none;
 
-        &_mob {
+        &__mob {
             align-items: center;
             display: flex;
             gap: 32px;
@@ -29,29 +30,33 @@
 
     .logo {
 
-        &_img {
+        &__img {
             width: 99px;
         }
     }
 
-    .title_1 {
-        text-align: center;
-        font-size: 48px;
+    .title {
+        &__1 {
+            text-align: center;
+            font-size: 48px;
+        }
+
+        &__2 {
+            font-size: 24px;
+        }
     }
 
-    .title_2 {
-        font-size: 24px;
-    }
+    .top {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .top_content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .top_text {
-        text-align: center;
-        font-size: 16px;
+        &__text {
+            text-align: center;
+            font-size: 16px;
+        }
     }
 
     .link {
@@ -67,11 +72,11 @@
         grid-template-columns: repeat(4, 1fr);
         row-gap: 16px;
 
-        &_box {
+        &-box {
             padding-top: 0px;
         }
 
-        &_item {
+        &__item {
             grid-column: 1 / -1;
             height: 375px;
             font-size: 28px;
@@ -89,11 +94,11 @@
     }
 
     .product {
-        &_box {
+        &-box {
             margin-top: 32px;
         }
 
-        &_name {
+        &__name {
             font-size: 18px;
         }
     }
@@ -109,18 +114,21 @@
         row-gap: 70px;
         margin-top: 32px;
 
-        &_subscription {
+        &__subscription {
             padding-left: 0px;
         }
     }
 
-    .section_special_offers {
-        row-gap: 32px;
+    .section {
+        &__specialOffers {
+            row-gap: 32px;
+        }
+
+        &__catalog {
+            row-gap: 32px;
+        }
     }
 
-    .section_catalog {
-        row-gap: 32px;
-    }
 
     .info {
         display: flex;
@@ -133,38 +141,38 @@
         margin-top: 92px;
         grid-template-columns: repeat(4, 1fr);
 
-        &_content {
+        &__content {
             grid-column: span 4;
         }
 
-        &_item {
+        &__item {
             column-gap: 19px;
         }
 
-        &_left {
+        &__left {
             width: 253px;
         }
 
-        &_name-box {
+        &__name-box {
             display: none;
         }
 
-        &_button {
+        &__button {
             font-size: 12px;
         }
 
-        &_price {
+        &__price {
             font-size: 14px;
         }
 
-        &_img {
+        &__img {
             display: none;
         }
 
-        &_form {
+        &__form {
             grid-column: span 4;
 
-            &_button {
+            &__button {
                 margin-left: 26px;
                 margin-right: 27px;
             }

@@ -1,35 +1,38 @@
 @media (max-width: 1024px) {
+
     .center {
         padding-left: calc(50% - 786px/2);
         padding-right: calc(50% - 786px/2);
     }
 
     .for {
-        &_item {
+        &__item {
             height: 268px;
         }
     }
 
-    .section_special_offers {
-        column-gap: 29px;
-        row-gap: 39px;
-    }
+    .section {
+        &__specialOffers {
+            column-gap: 29px;
+            row-gap: 39px;
+        }
 
-    .section_catalog {
-        column-gap: 29px;
-        row-gap: 39px;
+        &__catalog {
+            column-gap: 29px;
+            row-gap: 39px;
+        }
     }
 
     .footer {
-        &_logo {
+        &__logo {
             display: none;
         }
 
-        &_menu {
+        &__menu {
             padding-left: 0px;
         }
 
-        &_subscription {
+        &__subscription {
             padding-left: 192px;
         }
     }
@@ -55,7 +58,7 @@
     }
 
     .footer {
-        &_subscription {
+        &__subscription {
             padding-left: 127px;
         }
     }
